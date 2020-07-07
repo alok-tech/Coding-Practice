@@ -1,0 +1,32 @@
+Why Design Patterns?
+The advantages of design patterns are:
+
+To provide standard terminology that everybody understands
+Not to repeat the same mistakes over and over again
+What Are the Types of Design Patterns?
+The design patterns we talk about here, are from the perspective of an object-oriented world. There are mainly three different kinds of design patterns:
+
+Creational Patterns
+Structural Patterns
+Behavioral Patterns
+
+***************
+Creational
+***************
+Creational patterns deal with the creation of objects.
+
+***************
+Structural
+***************
+Structural patterns deal with the composition of objects.
+
+It deals with questions such as:
+
+What does a class contain?
+What are the relationships of a class with other classes? Is it inheritance or composition?
+
+******************
+Behavioral
+******************
+
+Behavioral patterns focus more on the behavior of objects, or more precisely, interactions between objects.

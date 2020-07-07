@@ -8,8 +8,8 @@ public class MaximumSumSubArray {
 	// (a) Observation (a) If all the elements in the array are positive then the
 	// (b) Solution will be the whole.
 
-	static int[]array = {2, -6, 3, 4, -2, 3, -3};
-	//static int[]array = {-6, -2, -3, -4, -2, -3, -3};
+	//static int[]array = {2, -6, 3, 4, -2, 3, -3};
+	static int[]array = {-6, -2, -3, -4, -2, -3, -3};
 	
 	// This is the Greedy Approach
 	static int maxSumSubArray(int a[]) {
