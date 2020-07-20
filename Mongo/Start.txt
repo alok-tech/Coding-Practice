@@ -1,0 +1,4 @@
+(1) Start MongoBd Service from the Service console.
+
+(2) Just paste "C:\Program Files\MongoDB\Server\4.2\bin\mongo.exe" in command window while running that as Administrator.
+

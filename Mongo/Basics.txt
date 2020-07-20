@@ -1,0 +1,62 @@
+Mongo DB ( document DB)
+
+General Discussion about unstructured data:
+•	Lots and lots of data.
+•	Non-relational DB
+•	NoSQL DB
+•	Document based DB
+•	Scalable
+
+Types of unstructured DB:
+•	Key value DB
+•	Document DB
+•	Graph DB
+•	Wide column DB
+
+-MEAN Stack (Mongo Express Angular JS Node JS)
+-MERN (Mongo Express React JS Node JS)
+
+Node JS is used for server side script
+Angular JS is used for front end 
+
+Architecture:-
+-----------------
+*Database : one server can have multiple db
+*Collection : a group of documents. there is no set schema for a collection. 
+                             Each document can have different fields.
+*Document : Each document in a collection can have different fields.
+
+Analogy :
+---------
+Mongo DB          | SQL
+DB                | DB
+Collection        | Table
+Document          | Row
+Fields            | Columns
+
+We can create indexes/constraints while creating Collections
+
+Basic commands :
+start monfo db service-
+
+>Mongo
+>Show dbs
+> db.version()
+> use demo
+> db.createCollections (“users”)
+>show collections
+>db.users.find()
+> db.users.find().pretty()
+>db.users.find({fname : ”Alok”)
+>db.users.set( {fname : “Neeraj”}, {set:{state: “KA”}} )
+>db.users.find().limit(2).pretty()
+>db.users.find().limit(2).skip(2).pretty()
+>db.users.find().limit(2).sort({age}).pretty()
+>db.users.find().limit(2).sort({age: -1}).pretty()
+>db.users.find ({‘fname’ : /a/}).pretty()
+
+Utilities to load images:
+•	GridFS is a specification for storing and retrieving files that exceed the document size limit of 16 MB.
+•	The mongoimport tool imports content from an Extended JSON, CSV, or TSV 
+
+Use case : Explore Mongo DB with Node JS for margin reports.

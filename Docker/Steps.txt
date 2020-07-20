@@ -1,0 +1,105 @@
+(1) Create Docker File with all the dependencies.
+
+(2) docker build -t image name .{}
+
+(3) docker images {It will show all the images from Docker}
+
+(4) Create a network in Docker
+
+docker network create knote
+
+(5) Run Mongo on that Network
+
+docker run --name=mongo --rm --network=knote mongo
+
+(6) Now we can run the app on the same docker Network like below
+
+docker run --name=knote --rm --network=knote -p 3000:3000 -e MONGO_URL=mongodb://mongo:27017/dev knote
+
+docker run --name=knote --rm --network=knote -p 3000:3000 -e MONGO_URL=mongodb://mongo:27017/dev alokrmishra/knote-js:1.0.0
+
+
+
+ alokrmishra/knote-js:1.0.0
+
+
+(7) Check all the docker processes via 
+
+docker ps
+
+
+*******************************************************************************
+
+We can deploy Docker containers, for example, AWS Elastic Beanstalk or Azure App Service.
+
+
+*****************************************************************************
+
+* Add all deplyment related info in applicaion.yaml file (Pod -- > Containers -- > Replicas).
+
+* KBs cluster Service will communicate with all the worker Nods(Pods).
+
+
+kubectl apply -f kube (This command submits all the YAML files in the kube directory to Kubernetes)
+
+kubectl get pods --watch (You can watch your Pods coming alive with)
+
+
+In Minikube, a Service can be accessed with the following command:
+
+ ** minikube service knote
+
+
+The command should open the URL of the knote Service in a web browser.
+
+You should see your application.
+
+
+******************************************************************************************
+
+Scaling
+
+******************************************************************
+
+
+Scaling your app
+
+Kubernetes makes it very easy to increase the number of replicas to 2 or more:
+
+kubectl scale --replicas=2 deployment/knote
+
+Reaccess your app:
+
+minikube service knote
+
+****************************************************************************************************
+
+
+So far you've learnt how to:
+
+develop a note taking applicaiton that stores notes in MongoDB
+packaged it as a Docker container
+deployed it in a local Kubernetes cluster
+
+
+********************************************************************************
+
+
+Deploying the same app in the cloud (AWS)
+
+
+Deploying a containerized application onto a Kubernetes cluster managed by Amazon Elastic Container Service for Kubernetes (Amazon EKS).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
