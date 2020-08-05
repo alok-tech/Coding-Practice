@@ -20,6 +20,9 @@ public class Solution {
         }
         
         end -= 1;
+        if(A.size() == 1) {
+        	result.add(carry);
+        }
         while (end >= 1){
             value = A.get(end) + carry;
             if(value > 9){
@@ -49,12 +52,15 @@ public class Solution {
         for(int i=0; i< result.size(); i++){
             result1.add(result.get(i));
         }
+        while (result1.get(0) == 0) {
+        	result1.remove(0);
+        }
         return result1;
     }
     
     public static void main(String[] args) {
 		
-    	int []data = {0, 0, 4, 4, 6, 0, 9, 6, 5, 1 };
+    	int []data = {9};
     	
     	ArrayList<Integer> test = new ArrayList<>();
         for(Integer text:data) {

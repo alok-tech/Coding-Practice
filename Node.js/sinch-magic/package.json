@@ -1,0 +1,19 @@
+{
+  "name": "sinch-magic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sendSMS.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^2.6.0",
+    "request": "^2.88.2",
+    "sinch-auth": "0.0.1",
+    "sinch-messaging": "0.0.1",
+    "sinch-rtc": "^1.4.12",
+    "sinch-sms": "0.0.8"
+  }
+}
